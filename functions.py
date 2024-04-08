@@ -64,12 +64,12 @@ def infer(image):
 def inferpoints(image):
     
     # Get the keypoints from your YOLOv8 inference
-    print("line 50 ingfeer")
+    print("line 567 ingfeer")
     result = model(image)
     # Visualize the keypoints
     keypoints = result[0].keypoints.xy
 
-    return keypoints
+    return keypoints.tolist()
 
 if __name__ == "__main__":
     infer()
